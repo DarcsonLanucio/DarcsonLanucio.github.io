@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario 1</title>
+</head>
+<body>
+
+<form action="#" method="post">
+  <fieldset>
+    <legend>Inscrição de evento</legend>
+
+    <p><label for="nome">Nome: </label><input id="nome" type="text" placeholder="Digite seu nome" autocomplete="off" required></p>
+    <p><label for="num">Numero para contato: </label><input id="num" type="tel" placeholder="(ddd) 90000-0000"></p>
+    <p><label for="email">E-mail: </label><input id="email" type="email" placeholder="E-mail" required autocomplete="off"></p>
+
+    <p style="margin: 0 0 0 0; width: 110px"><label>Data do evento:</label></p>
+    <div style="margin: 0 0 0 110px; border:3px double; border-color: black; width: 500px; ">
+      <input type="checkbox" id="seg"><label for="seg">Segunda-feira</label> <input type="checkbox"  id="ter">
+      <label for="ter">Terça-feira</label><input type="checkbox" id="qua"><label for="qua">Quarta-feira</label>
+      <input type="checkbox" id="qui"><label for="qui">Quinta-feira</label><input type="checkbox" id="sex">
+      <label for="sex">Sexta-feira</label></div>
+
+
+    <input type="button" value="Enviar">
+  </fieldset>
+
+
+</form>
+Para voltar clique <a href="index.html">aqui</a>
+</body>
+</html>
