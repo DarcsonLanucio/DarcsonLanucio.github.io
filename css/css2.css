@@ -4,7 +4,7 @@
 }
 body{
   margin: 0;
-  background-image:url("../../WEB1/img/darkbg.png");
+  background-image:url("/img/darkbg.png");
 
 }
 .menu{
@@ -172,7 +172,7 @@ form div{
   color: white;
   margin: 1px;
   border-radius: 5px 0 ;
-  background-image: url("../../WEB1/img/bgazul.png") ;
+  background-image: url("/img/bgazul.png") ;
   padding: 2px;
 
 }
