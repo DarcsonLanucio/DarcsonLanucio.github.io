@@ -1,0 +1,262 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  background-image:url("../../WEB1/img/darkbg.png");
+
+}
+.menu{
+  color: white;
+  float: left;
+  list-style: none;
+  transition: all .5s;
+  display: flex;
+  flex-direction: row;
+}
+nav{
+  background-color: black;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+h1, p {
+  color: white;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+li{
+  padding: 0 20px;
+}
+h1{
+  margin: 0;
+  padding: 10px;
+}
+button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+
+.menu,
+.menu li,
+.menu a ,
+.submenu,
+.submenu li,
+.submenu a{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul.menu ul {
+  position: absolute;
+  display: none;
+
+}
+ul.menu {
+  float: left;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.menu li {
+  float: left;
+  width: auto;
+  position: relative;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.menu li a {
+  display: block;
+  padding: 0 20px;
+  line-height: 45px;
+  height: 45px;
+  float: left;
+  transition: all 0.1s linear;
+}
+.menu li:hover> ul.submenu {
+  display: block;
+  top: 45px;
+  left: 0;
+  padding: 5px;
+  width: 200px;
+  border-radius: 0 0 5px 5px;
+}
+
+.menu ul.submenu a {
+  width: 160px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.menu {
+  background: #000000;
+}
+
+.menu a {
+  color: #ffffff;
+}
+
+.menu li:hover a {
+  background: #000000;
+  color: #fff;
+
+}
+
+/*nivel 2*/
+.submenu {
+  background: #000000;
+}
+
+.submenu a {
+  color: #fff;
+}
+
+.submenu li:hover>a {
+  background: #000000;
+}
+
+
+h1:hover,
+button:hover{
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: white;
+  border-radius: 5px;
+}
+button:focus ~ul{
+  height: 260px;
+}
+/* -------------------------------------------------*/
+form{
+  align-items:flex-start;
+  display: flex;
+  flex-direction: row;
+  margin-right: 0;
+}
+form #submit{
+  margin-left: 45% ;
+}
+form div{
+  width: 48%;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+#div1 label{
+  margin: 3px 0  ;
+  border: 1px #9b6262;
+  border-style:  none none solid none;
+}
+#div1 #lbcor{
+  margin: 8px 0 4px 0;
+
+}
+#div2 input, textarea{
+  color: white;
+  margin: 1px;
+  border-radius: 5px 0 ;
+  background-image: url("../../WEB1/img/bgazul.png") ;
+  padding: 2px;
+
+}
+#div2 #cor{
+  width: 100%;
+  border-radius: 5px 0 ;
+  border: 2px inset rgb(133, 133, 133) ;
+}
+
+
+fieldset {
+  width: 100%;
+  background: rgba(42, 42, 121, 0.91);
+  border-radius: 5px;
+  padding: 4px;
+  border: 4px double #001a80;
+  margin: 3px;
+}
+legend{
+  color: #ffffff;
+  font-size: 35px;
+  font-family: "Times New Roman", serif;
+}
+form label{
+  color: #ffffff;
+  margin-right: 20px;
+}
+ #submit{
+   margin-bottom: 0 ;
+   color: red;
+   width: 9%;
+   height: 40px;
+   border-radius: 30px;
+
+}
+
+
+
+
+
+
+@media (max-width: 700px) {
+
+  nav, ul.menu, ul.submenu{
+    flex-direction: column;
+
+
+  }
+  ul.menu,ul.submenu {
+    text-align: center;
+    margin: 0;
+    height: 0;
+  }
+  nav{
+    padding-top: 0;
+    align-items: flex-start;
+  }
+  h1{
+    margin: 10px;
+  }
+  button{
+    display: flex;
+  }
+  ul.menu, ul.submenu, a, ul.menu li, ul.submenu li  {
+    width: 100%;
+  }
+  .menu li a, .submenu li a{
+    padding: 0;
+  }
+  .menu li:hover> ul.submenu {
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    top: 0;
+    padding: 5px;
+    height: 55%;
+    width: 98%;
+
+  }
+  section{
+    position: relative;
+  }
+
+
+}
