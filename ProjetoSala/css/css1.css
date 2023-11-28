@@ -1,0 +1,47 @@
+.navbar-expand-lg{
+    background: #454d75;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+*{
+    margin: 0;
+}
+
+.page{
+    margin-top: 10px ;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.seção{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+.informs {
+    display: flex;
+    border: 2px double;
+    width: 100%;
+    margin: 0 20px;
+    border-radius: 5px 30px;
+    background: #454d75;
+    flex-direction: column;
+    align-items: center
+}
+.informs h1{
+
+    margin: 35px 0;
+}
+.informs p{
+    margin: 5px 20px;
+    font-size: x-large;
+    text-align: center;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 20px;
+}
