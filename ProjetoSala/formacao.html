@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Darcson Lanúcio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/css1.css">
+</head>
+<body>
+<nav id="menu"></nav>
+<script>
+    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu').innerHTML = data;
+        });
+</script>
+<div class="page2">
+
+    <div class="informs">
+        <h1>Ensino medio - Tecnico</h1>
+        <p>Como o nome sugere, completei o Ensino Médio integrado ao Ensino Técnico oferecido pelo Instituto Federal
+            Goiano - Campus Urutaí. Com uma duração de três anos, o curso técnico abordou matérias direcionadas ao
+            ensino de diversas ferramentas necessárias para ingressar na área da programação, além de conteúdos
+            específicos como o uso de bancos de dados e lógica de programação. Ingressei no curso em 2018 e recebi meu
+            diploma no início de 2022, sendo que houve um atraso devido à pandemia ocorrida em 2020.</p>
+        <p>Link para o site da instituição <a
+                href="https://ifgoiano.edu.br/home/index.php/cursos-tecnicos-urutai/276-informatica.html"
+                target="_blank">aqui</a></p>
+    </div>
+    <div class="informs">
+        <h1>Bacharelado em Sistemas da Informação</h1>
+        <p>
+            O Curso de Bacharelado em Sistemas de Informação, também oferecido pelo Instituto Federal Goiano - Campus
+            Urutaí, tem como objetivo formar profissionais capacitados para atuar em um segmento da área de informática,
+            abrangendo a administração dos recursos de infraestrutura física e lógica dos ambientes informatizados. Faço
+            parte da turma de 2022, com previsão de conclusão para 2024.</p>
+        <p>Link para o site da instituição <a
+                href="https://ifgoiano.edu.br/home/index.php/cursos-superiores-urutai/302-sistema-da-informacao.html"
+                target="_blank">aqui</a></p>
+    </div>
+
+</div>
+</body>
+</html>
