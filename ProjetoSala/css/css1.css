@@ -37,7 +37,6 @@
 }
 .midias{
     display: flex;
-    border: 2px double;
     width: 100%;
     margin: 0 20px;
     border-radius: 5px 30px;
@@ -45,6 +44,18 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+.midias a:visited, .midias a:hover{
+    text-decoration: none;
+}
+.midias a{
+    color: #212529;
+}
+.midias span{
+    font-weight: bold;
+}
+.midias svg{
+    color: white;
 }
 .midia-glo{
     margin: 20px 0;
@@ -60,6 +71,12 @@
     margin: 20px 0;
     color: rgba(255, 255, 255, 0.73);
     width: 90%;
+    display: flex;
+    flex-direction: column
+}
+.botao{
+    display: flex;
+    justify-content: center;
 }
 .informs h1{
 
